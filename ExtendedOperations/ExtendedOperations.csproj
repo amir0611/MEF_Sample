@@ -4,26 +4,24 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF3F4CA9-2425-473B-83A5-071172CBD909}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>MEF</RootNamespace>
-    <AssemblyName>MEF</AssemblyName>
+    <ProjectGuid>{76BD4E34-66C8-4438-85AA-F2F661DD66C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExtendedOperations</RootNamespace>
+    <AssemblyName>ExtendedOperations</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\MEF\Extensions\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,21 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Mod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleCalculator\Addition.cs" />
-    <Compile Include="SimpleCalculator\ICalculator.cs" />
-    <Compile Include="SimpleCalculator\IBinaryOperation.cs" />
-    <Compile Include="SimpleCalculator\IOperation.cs" />
-    <Compile Include="SimpleCalculator\IOperationData.cs" />
-    <Compile Include="SimpleCalculator\Multiplication.cs" />
-    <Compile Include="SimpleCalculator\MySimpleCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Extensions\" />
+    <ProjectReference Include="..\MEF\MEF.csproj">
+      <Project>{ff3f4ca9-2425-473b-83a5-071172cbd909}</Project>
+      <Name>MEF</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

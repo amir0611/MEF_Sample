@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEF", "MEF\MEF.csproj", "{FF3F4CA9-2425-473B-83A5-071172CBD909}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedOperations", "ExtendedOperations\ExtendedOperations.csproj", "{76BD4E34-66C8-4438-85AA-F2F661DD66C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FF3F4CA9-2425-473B-83A5-071172CBD909}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF3F4CA9-2425-473B-83A5-071172CBD909}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF3F4CA9-2425-473B-83A5-071172CBD909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76BD4E34-66C8-4438-85AA-F2F661DD66C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76BD4E34-66C8-4438-85AA-F2F661DD66C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76BD4E34-66C8-4438-85AA-F2F661DD66C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76BD4E34-66C8-4438-85AA-F2F661DD66C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
